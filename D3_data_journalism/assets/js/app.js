@@ -112,14 +112,13 @@ function updateCircleLabels(Data, x, y, chosenXAxis, chosenYAxis, circleLabels) 
 // function used for updating circles group with new tooltip
 function updateToolTip(chosenXAxis, chosenYAxis, circlesLabels) {
 
-  console.log(chosenXAxis);
-
   // Define tooltip
   var toolTip = d3.tip()
                   .attr("class", "d3-tip")
                   .offset([80, -60])
                   .html(function(d) {
-                    //console.log(`${d[chosenXAxis]}`);  
+                    //console.log(`${d[chosenXAxis]} ${d[chosenYAxis]}`);
+                    //console.log(`${chosenXAxis} ${chosenYAxis}`);
                   //console.log(`${d.state}<br> ${chosenXAxis} : ${d[chosenXAxis]} <br> ${chosenYAxis}: ${d[chosenYAxis]}`);
                   return (`${d.state}<br> ${chosenXAxis} : ${d[chosenXAxis]} <br> ${chosenYAxis}: ${d[chosenYAxis]}`);
   });              
@@ -255,7 +254,7 @@ d3.csv("assets/data/data.csv").then(function(Data) {
 
                 // updates x axis with transition for chosenXAxis
                 xAxis = renderXAxes(x, xAxis);
-                console.log("change");
+                //console.log("change");
    
                 // Update Cirlcle position with transition for chosenXAxis                                        
                 circlesGroup.transition()
@@ -320,7 +319,7 @@ d3.csv("assets/data/data.csv").then(function(Data) {
 
                 // updates y axis with transition for chosenYAxis
                 yAxis = renderYAxes(y, yAxis);
-                console.log("change");
+                //console.log("change");
    
                 // Update Cirlcle position with transition for chosenYAxis                                        
                 circlesGroup.transition()
