@@ -19,11 +19,11 @@ Javascript
 
 2. Open Terminal (on Mac) or Open Bash (on PC)
 
-3. Navigate to the 'D3-challenge\D3_data_journalism\assets' folder
+3. Navigate to the 'D3-challenge\D3_data_journalism\' folder
 
 4. Open Visual Studio Code and open a new terminal session.
 
-5. Navigate to the 'D3-challenge\D3_data_journalism\assets' folder for the new terminal session.
+5. Navigate to the 'D3-challenge\D3_data_journalism\' folder for the new terminal session.
 
 6. Enter command 'python -m http.server' which will create a new web server session on your PC.
 
